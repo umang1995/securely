@@ -1,0 +1,11 @@
+Flask==0.10.1
+gcloud
+Flask-SQLAlchemy==2.0
+PyMySQL==0.6.6
+six==1.9.0
+requests[security]==2.7.0
+simplejson==3.8.1
+Flask-RESTful==0.3.5
+Pillow==2.7.0
+pycrypto
+
