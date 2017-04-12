@@ -1,0 +1,78 @@
+body{
+margin:0px;
+}
+#homepage_top{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.login_button_homepage{
+    margin:1%;
+    height: 50px;
+    width:  80px;
+    padding:10px;
+    color: #00ff08;
+    background: rgba(0, 255, 102, 0);
+    float:right;
+}
+#login_button_homepage:hover{
+    background: #00d556;
+}
+.hp_header_motto{
+    align:center;
+    font-size: 70px;
+    color: #000000;
+}
+.hp_header_motto_sub{
+    align:center;
+    margin:20px;
+    font-size: 40px;
+    color: #000000;
+}
+#homepage_top
+{
+    margin: 0%;
+    background:#39424e;
+    height: auto;
+}
+#logo
+{
+    height:100px;
+    width: 300px;
+}
+
+div#div1{
+    position:relative;
+    z-index:1;
+    background:#39424e;
+    width:100%;
+    height: auto;
+
+}
+#logout
+{
+
+float:right;
+margin-top:2%;
+background:#5c7d9c;
+margin-right:1%;
+width:100px;
+padding:10px;
+color:white;
+}
+.headerLink{
+    display:inline-block;
+    color:grey;
+    text-decoration:none;
+    margin-left:280px;
+    position:relative;
+    top:-30px;
+    font-size:20px;
+}
+td
+{
+padding:5px;
+}
+#result_coords
+{
+display:none;
+}

@@ -1,0 +1,73 @@
+#mapDetails
+{
+    display:block;
+    margin:40px;
+}
+h2
+{
+    position:relative;
+    margin-left:400px;
+    display:inline-block;
+}
+form{
+    margin-top:5px;
+}
+textarea{
+    display:block;
+    position:relative;
+    background:#eeeeee;
+    margin-left:60px;
+    font-size:18px;
+    margin-top:10px;
+    padding:13px;
+    width:auto;
+}
+#submitBtn{
+margin-top:20px;
+width:100px;
+padding:10px;
+color:white;
+background:#5fb8d5;
+}
+#list_section
+{
+display:none;
+}
+#file_list
+{
+    list-style-type: none ;
+    color:blue;
+    text-style:underline;
+    position:relative;
+    display:block;
+    margin-left:200px;
+    margin-top:50px;
+    text-decoration :underline;
+}
+
+.file_items
+{
+	margin :10px;
+}
+
+#user_file
+{
+display:none;
+position:relative;
+}
+
+.back
+{
+position:relative;
+margin-top:5%;
+margin-left:1%;
+background:#5c7d9c;
+width:auto;
+padding:2px;
+color:white;
+}
+#message
+{
+color:red;
+size:20px;
+}

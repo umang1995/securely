@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/homepage.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/map.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/download.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='js/download_page.js')}}"></script>
+    <script src="{{url_for('static',filename='js/profile.js')}}"></script>
+    <title>download</title>
+</head>
+<body>
+<div id='div1'>
+    <img id='logo' src="{{url_for('static',filename='img/logo.png')}}" />
+    <a href="profile" class = "headerLink" >Profile</a>
+	<a href="upload" class = "headerLink">Upload</a>
+	<a href = "#" class = "headerLink">Download</a>
+	<button value="logout" id="logout">Logout</button>
+</div>
+
+<form id = "location" method="post">
+    <div id = "list_section">
+        <h2>Uploaded Files</h2>
+        <ul id="file_list"></ul>
+    </div>
+</form>
+
+<div id ="user_file">
+    <button id="back" class = "back">BACK</button>
+    <div id ="actual_file"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src = "{{url_for('static',filename='js/upload_page.js')}}"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+        width:100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type ="text" id ="autocomplete">
+    <div id="map"></div>
+    <input type="text" id="latitude" hidden>
+    <input type="text" id="longitude" hidden>
+    <script src = "{{url_for('static',filename='js/maps.js')}}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpnPDrbdlcMJmC8q8-rq4AEVB3aefvoY4&callback=initMap&libraries=places"
+    async defer></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+#login
+{
+    visibility: hidden;
+}
+#register
+{
+    visibility: visible;
+}
+
+#i1{
+    display:inline-block;
+    width:7%;
+    height:50px;
+    margin-left:50px;
+    margin-top:5px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.div2{
+    background:#f5f5f5;
+    width:102%;
+    height:600px;
+    position:relative;
+    top:72px;
+    margin-left:-8px;
+}
+.div3
+{
+    position:relative;
+    margin-left:500px;
+}
+
+h3{
+    font-weight:normal;
+    margin-left:30px;
+    margin-bottom:30px;
+    font-size:22px;
+}
+form{
+    margin-top:5px;
+}
+input{
+    display:block;
+    background:#eeeeee;
+    margin-left:30px;
+    font-size:18px;
+    margin-top:10px;
+    padding:13px;
+    width:auto;
+}
+button
+{
+    width:100px;
+    padding:10px;
+    color:white;
+}
+input[type="submit"]{
+    margin-top:20px;
+    width:100px;
+    padding:10px;
+    color:white;
+    background:#5fb8d5;
+}
+input[type="submit"]:hover{
+    background:steelblue;
+}
+/*h3{
+    margin-top:20px;
+    display:inline-block;
+}*/
+a{
+    display:inline-block;
+    color:grey;
+    text-decoration:none;
+    margin-left:280px;
+    position:relative;
+    top:-30px;
+    font-size:20px;
+}
+a#a2{
+    position:relative;
+    top:-30px;
+    margin-left:500px;
+    text-decoration:none;
+    color:white;
+    font-size:25px;
+}
+#message
+{
+color:red;
+size:20px;
+}
+.tableData
+{
+padding:5px;
+}

@@ -1,0 +1,62 @@
+form{
+    margin-top:5px;
+}
+input,textarea{
+    display:block;
+    position:relative;
+    background:#eeeeee;
+    margin-left:60px;
+    font-size:18px;
+    margin-top:10px;
+    padding:13px;
+    width:auto;
+}
+#message
+{
+color:red;
+size:20px;
+}
+#nextBtn{
+margin-top:20px;
+width:100px;
+padding:10px;
+color:white;
+background:#5fb8d5;
+}
+h2
+{
+    position:relative;
+    margin-left:400px;
+}
+#mapSection
+{
+    display:none;
+}
+#longitude
+{
+width:200px;
+}
+
+#latitude
+{
+width:200px;
+}
+
+.div3{
+    background:white;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    width:33%;
+    border:2px solid white;
+    height:300px;
+    margin-top:100px;
+
+}
+
+#map{
+display:none;
+float:left;
+}
+
+

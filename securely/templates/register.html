@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login_register.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/homepage.css')}}">
+</head>
+<body>
+<div id='div1'>
+    <img id='logo' src="{{url_for('static',filename='img/logo.png')}}" />
+    <a href="{{url_for('homepage')}}">Home</a>
+</div>
+<div class='div3'>
+    <h3>Register</h3>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input id="name" type="text" name="name" value = "{{request.form.name}}" placeholder="Enter Username Here"></td>
+            </tr>
+            <tr>
+                <td><label for="new_username">Username</label></td>
+                <td><input id="new_username" type="text" name="username" value = "{{request.form.username}}" placeholder="Enter Username Here"></td>
+            </tr>
+            <tr>
+                <td><label for="new_password">Password</label></td>
+                <td><input id="new_password" type="password" name="password" value = "{{request.form.password}}" placeholder="**********"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email" value = "{{request.form.email}}" placeholder="my_email@somedomain.com"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="register" name="submit"></td>
+            </tr>
+
+        </table>
+    </form>
+    {% if error %}
+    <p id="message">{{error}}</p>
+    {% endif %}
+</div>
+
+</body>
+</html>

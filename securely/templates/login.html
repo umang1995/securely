@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/login_register.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/homepage.css')}}">
+</head>
+<body>
+<div id='div1'>
+    <img id='logo' src="{{url_for('static',filename='img/logo.png')}}" />
+    <a href="{{url_for('homepage')}}">Home</a>
+</div>
+    <div class='div3'>
+        <h3>Login</h3>
+        <form action="" method="post">
+            <table>
+            <tr>
+                <td align="center"><label for="username">Username</label></td>
+                <td align="center"><input type="text" name="username" id="username" value = "{{request.form.username}}" placeholder="Enter Username Here"></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label for="password">Password</label>
+                </td>
+                <td align="center">
+                    <input name="password" id="password" type="password" placeholder="***********" value = {{request.form.password}}>
+                </td>
+            </tr>
+                <tr>
+                <td align="center"><input type="submit" value="login"></td>
+                <td align="left"><a href="#">forgot password</a></td>
+                </tr>
+            </table>
+        </form>
+        {% if errors %}
+        <p>Error:{{errors}}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>

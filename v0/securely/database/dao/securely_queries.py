@@ -1,0 +1,10 @@
+class SecurelyQueries(object):
+    "insert into test(dbtest) values (:testdate)"
+    insert_into_user = "insert into user(username,name,password,email) values (:username,:name,:password,:email)"
+    get_all_users = "select username from user"
+    login_user = "select * from user where username = :username"
+    insert_into_password = "insert into password(location,SS,password,longitude,latitude,IV,username,hash_key_for_encryption) values(:file_location,:salt,:password,:longitude,:latitude,:iv,:username,:key)"
+    get_files_for_user = "select * from password where username = :user_id"
+    get_basic_details = "select * from user where username = :username"
+    get_user_file_count = "select count(distinct(location)) as file_count from password where username = :username"
+    get_file_details = "SELECT * FROM password where location like :filename and username = :username limit 0, 1"

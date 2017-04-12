@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/homepage.css')}}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="{{url_for('static',filename='js/profile.js')}}"></script>
+    <title>profile</title>
+</head>
+<body>
+<div id='div1'>
+    <img id='logo' src="{{url_for('static',filename='img/logo.png')}}" />
+    <a href="#" class = "headerLink">Profile</a>
+	<a href="upload" class = "headerLink">Upload</a>
+	<a href = "download" class = "headerLink">Download</a>
+	<button value="logout" id="logout">Logout</button>
+</div>
+<div2>
+    <table id ="user_table">
+        <tr id="name">
+            <td>name</td>
+        </tr>
+        <tr id="username">
+            <td>username</td>
+        </tr>
+        <tr id="email">
+            <td>email</td>
+
+        </tr>
+        <tr id="file_uploaded">
+            <td>files uploaded till now</td>
+
+        </tr>
+    </table>
+</div2>
+</body>
+</html>
